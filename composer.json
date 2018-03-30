@@ -27,10 +27,10 @@
       "email": "ciromattia@gmail.com",
       "role": "Developer"
     }
-   ],  
+   ],
   "type": "wordpress-plugin",
   "require": {
     "php": ">=5.3.2",
-    "composer/installers": "~1.0"
+    "composer/installers": "~1.5.0"
   }
 }
