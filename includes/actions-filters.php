@@ -1,14 +1,14 @@
 <?php
-
-// ======================================================================== //
+  
+// ======================================================================== //		
 // PHP Version notice if version < 5.3
-// ======================================================================== //
+// ======================================================================== // 
 
     function php_version_notice() {
         $class = 'notice notice-error';
         $message = __( '<strong>Bootstrap 4 Shortcodes for WordPress</strong> requires PHP version 5.3 or later. You are running PHP version ' . PHP_VERSION . '. Please upgrade to a supported version of PHP.', 'sample-text-domain' );
 
-        printf( '<div class="%1$s"><p>%2$s</p></div>', $class, $message );
+        printf( '<div class="%1$s"><p>%2$s</p></div>', $class, $message ); 
     }
 
     //Only run this if the PHP version is less than 5.3
@@ -31,18 +31,18 @@
 
     add_action( 'admin_enqueue_scripts', 'bootstrap_shortcodes_styles_all' );
 
-// ======================================================================== //
+// ======================================================================== // 
 
 
 
-// ======================================================================== //
+// ======================================================================== //		
 // Function and filter to remove extra line breaks around shortcodes
-// ======================================================================== //
+// ======================================================================== // 
 
-    function bs_fix_shortcodes($content){
+    function bs_fix_shortcodes($content){   
         $array = array (
-            '<p>[' => '[',
-            ']</p>' => ']',
+            '<p>[' => '[', 
+            ']</p>' => ']', 
             ']<br />' => ']',
             ']<br>' => ']'
         );
@@ -143,7 +143,7 @@
 
 
 
-// ======================================================================== //
+// ======================================================================== //		
 // Gravity Forms is bossy.
 // Register this script with Gravity Forms (if present) so it isn't stripped out
 // ======================================================================== //
